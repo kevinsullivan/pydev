@@ -15,7 +15,9 @@ RUN apt-get clean && apt-get update -y && apt-get upgrade -y && apt-get update -
 RUN apt-get install -y locales && locale-gen en_US.UTF-8  
 ENV LANG en_US.UTF-8  
 ENV LANGUAGE en_US:en  
-ENV LC_ALL en_US.UTF-8  
+ENV LC_ALL en_US.UTF-8 
+RUN echo "en_US.UTF-8 UTF-8" >> /etc/locale.gen
+RUN locale-gen
 
 # Install essential tools and libraries
 RUN apt-get -y install lsb-release build-essential git vim wget gnupg curl unzip libssl-dev libffi-dev libconfig-dev
