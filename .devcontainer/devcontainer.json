@@ -27,6 +27,7 @@
 				"ms-python.python",
 				"redhat.vscode-yaml",
 				"donjayamanne.python-extension-pack",
+				"ms-toolsai.jupyter"
 			]
         }
     },
