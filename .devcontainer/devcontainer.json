@@ -10,6 +10,7 @@
         "vscode" : {
             "settings": {},
             "extensions": [
+				"ms-python.python",
 				"ms-vsliveshare.vsliveshare-pack",
 				"ms-vscode-remote.remote-containers",
 				"yzhang.markdown-all-in-one",
@@ -24,11 +25,12 @@
 				"mechatroner.rainbow-csv",
 				"redhat.fabric8-analytics",
 				"ZainChen.json",
-				"ms-python.python",
 				"redhat.vscode-yaml",
 				"donjayamanne.python-extension-pack",
 				"ms-toolsai.jupyter",
-				"ms-python.black-formatter"
+				"ms-python.black-formatter",
+				"ms-toolsai.datawrangler",
+				"GitHub.copilot"
 			]
         }
     },
