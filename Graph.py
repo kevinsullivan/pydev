@@ -4,9 +4,9 @@ import matplotlib.pyplot as plt
 
 # Use Pandas to read CSV file into a data frame
 # Extract month (x) and profit (y) data into separate series
-df = pd.read_csv('data.csv')
-month = df['month']
-profit = df['profit']
+df = pd.read_csv("data.csv")
+month = df["month"]
+profit = df["profit"]
 
 # Use default Seaborn theme
 # Create Seaborn scatter plot with months on x- and profits on y-axis
@@ -24,4 +24,3 @@ plt.show()
 
 # Step 4: Close the plot (if you displayed it)
 # plt.close()
-
