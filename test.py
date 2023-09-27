@@ -1,26 +1,24 @@
 import pandas as pd
+import seaborn as sns
 import matplotlib.pyplot as plt
 
-# Step 1: Read the CSV file into a DataFrame
-file_path = 'my_file.csv'  
+# Step 1: Read the CSV file into a Pandas DataFrame
+file_path = 'data.csv'  
 df = pd.read_csv(file_path)
 
-# Step 2: Generate a graph
-# Assuming your CSV file has columns 'x' and 'y' for the x and y-axis data
-x = df['x']
-y = df['y']
+# Step 2: Extract month (x) and profit (y) data into series
+month = df['month']
+profit = df['profit']
 
-# Create a simple line plot
-plt.figure(figsize=(10, 6))  # Adjust the figure size as needed
-plt.plot(x, y, marker='o', linestyle='-')
-plt.title('CSV Data Plot')
-plt.xlabel('X-axis Label')
-plt.ylabel('Y-axis Label')
-plt.grid(True)
+# Use default Seaborn theme
+# Create a scatter plot using Seaborn
+# See https://seaborn.pydata.org/generated/seaborn.scatterplot.html
+sns.set_theme()
+sns.scatterplot(x=month, y=profit)
 
-# Step 3: Show the graph or save it to a file
-# To display the graph, uncomment the following line:
+# Seaborn uses matplotlib, which we call to display the plot
 plt.show()
+
 
 # To save the graph to a file (e.g., 'output_graph.png'), uncomment and modify the following line:
 # plt.savefig('output_graph.png')
