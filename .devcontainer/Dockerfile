@@ -6,6 +6,7 @@ FROM python:3.11-slim-bookworm
 
 # Create image without any user interaction
 ENV DEBIAN_FRONTEND=noninteractive
+ARG DEBCONF_NOWARNINGS="yes"
 RUN echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
 SHELL ["/bin/bash", "-c"]
@@ -22,10 +23,17 @@ RUN locale-gen
 # Install essential tools and libraries
 RUN apt-get -y install lsb-release build-essential git vim wget gnupg curl unzip libssl-dev libffi-dev libconfig-dev
 
-
 # Perform following actions in containers /root directory
 WORKDIR /root 
 
 # Set up bash .profile
 COPY .profile.txt /root/.profile
+
+#RUN adduser --disabled-password --comment localuser
+#USER localuser
+
+RUN python -m pip install --upgrade pip
+RUN python3 -m pip install --upgrade pip
+
+RUN apt-get -y install python3-tk
 
