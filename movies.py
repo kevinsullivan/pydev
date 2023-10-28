@@ -12,17 +12,14 @@ import pandas as pd
 
 # read data from movies Excel file
 df = pd.read_excel("movies.xls")
-
 print("Summarize input data: ", df.describe)
 
 #
-# Add here what you want to do with the data
+# DO SOMETHING INTERESTING HERE TO THE DATA
 #
 
 # Output the updated data to output.xlsx Excel file
 df.to_excel("output.xlsx")
-
-
-print("\nRead it back in and summarize it")
+print("\nVerify expected output file")
 df = pd.read_excel("output.xlsx")
 print(df.describe)
