@@ -1,10 +1,12 @@
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+import os
 
 # Use Pandas to read CSV file into a data frame
 # Extract month (x) and profit (y) data into separate series
-df = pd.read_csv("data_to_graph.csv")
+# print("Working directory: ", os.getcwd())
+df = pd.read_csv("./graph.csv")
 month = df["month"]
 profit = df["profit"]
 
