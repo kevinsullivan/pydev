@@ -20,6 +20,8 @@ print("Summarize input data: ", df.describe)
 
 # Output the updated data to output.xlsx Excel file
 df.to_excel("output.xlsx")
+
+# Confirm by eye that output is as expected
 print("\nVerify expected output file")
 df = pd.read_excel("output.xlsx")
 print(df.describe)
