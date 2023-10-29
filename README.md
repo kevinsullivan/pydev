@@ -29,3 +29,9 @@ The movies.xls file is several thousand lines of data on movies. We thank the so
 ## Data Plotting Using Seaborn
 
 Watch a few YouTube tutorials and test out the ideas in the files we provide. Level of difficulty: low.
+
+## Installation
+
+### On Mac
+
+You need a display manager on your local host machine. I believe I installed XQuartz.

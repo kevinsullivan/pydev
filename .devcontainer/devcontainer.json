@@ -30,7 +30,8 @@
 				"ms-toolsai.jupyter",
 				"ms-python.black-formatter",
 				"ms-toolsai.datawrangler",
-				"GitHub.copilot"
+				"GitHub.copilot",
+				"ms-vsliveshare.vsliveshare"
 			]
         }
     },
