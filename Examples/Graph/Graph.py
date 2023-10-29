@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 
 # Use Pandas to read CSV file into a data frame
 # Extract month (x) and profit (y) data into separate series
-df = pd.read_csv("./data_to_graph.csv")
+df = pd.read_csv("./Examples/Graph/data_to_graph.csv")
 month = df["month"]
 profit = df["profit"]
 
