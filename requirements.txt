@@ -5,3 +5,4 @@ jupyter
 black[jupyter]
 openpyxl
 xlrd
+hobo
